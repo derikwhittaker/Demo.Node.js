@@ -1,0 +1,14 @@
+{
+    "dependencies": {
+        "express": "3.4.8",
+        "memory-cache" : "0.0.5",
+        "path" : "0.4.9",
+        "socket.io" : "0.9.16",
+        "less-middleware": "*",
+        "underscore" : "*",
+        "moment" : "*",
+        "jade" : "*",
+        "ejs" : "*",
+        "node-uuid" : "*"
+    }
+}

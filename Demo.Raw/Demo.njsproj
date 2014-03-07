@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{06b8e239-abcf-42b2-80b1-557e34ef0d1a}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ProjectFiles</ProjectView>
+    <StartupFile>Server.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Compile Include="controllers\connectionsController.js" />
+    <Compile Include="Controllers\debugController.js" />
+    <Compile Include="controllers\questionsController.js" />
+    <Compile Include="controllers\index.js" />
+    <Compile Include="controllers\quizController.js" />
+    <Compile Include="Controllers\viewController.js" />
+    <Compile Include="models\answer.js" />
+    <Compile Include="Models\connections.js" />
+    <Compile Include="Models\hub.js" />
+    <Compile Include="models\index.js" />
+    <Compile Include="models\question.js" />
+    <Compile Include="models\submission.js" />
+    <Compile Include="models\user.js" />
+    <Compile Include="quizController.js" />
+    <Compile Include="Org_Server.js" />
+    <Compile Include="Server.js" />
+    <Compile Include="views\js\knockout-3.0.0.js" />
+    <Compile Include="views\vm\adminViewModel.js" />
+    <Compile Include="views\vm\mainViewModel.js" />
+    <Content Include="Demo.SocketIoClient\Demo.SocketIoClient\Project_Readme.html" />
+    <Content Include="Demo.SocketIoClient\Demo.SocketIoClient\favicon.ico" />
+    <Content Include="Demo.SocketIoClient\Demo.SocketIoClient\bin\Newtonsoft.Json.xml" />
+    <Content Include="Demo.SocketIoClient\Demo.SocketIoClient\bin\System.Web.Helpers.xml" />
+    <Content Include="Demo.SocketIoClient\Demo.SocketIoClient\bin\System.Web.Mvc.xml" />
+    <Content Include="Demo.SocketIoClient\Demo.SocketIoClient\bin\System.Web.Optimization.xml" />
+    <Content Include="Demo.SocketIoClient\Demo.SocketIoClient\bin\System.Web.Razor.xml" />
+    <Content Include="Demo.SocketIoClient\Demo.SocketIoClient\bin\System.Web.WebPages.Deployment.xml" />
+    <Content Include="Demo.SocketIoClient\Demo.SocketIoClient\bin\System.Web.WebPages.Razor.xml" />
+    <Content Include="Demo.SocketIoClient\Demo.SocketIoClient\bin\System.Web.WebPages.xml" />
+    <Content Include="Demo.SocketIoClient\Demo.SocketIoClient\Content\bootstrap.css" />
+    <Content Include="Demo.SocketIoClient\Demo.SocketIoClient\Content\bootstrap.min.css" />
+    <Content Include="Demo.SocketIoClient\Demo.SocketIoClient\Content\Site.css" />
+    <Content Include="Demo.SocketIoClient\Demo.SocketIoClient\fonts\glyphicons-halflings-regular.svg" />
+    <Compile Include="Demo.SocketIoClient\Demo.SocketIoClient\Scripts\bootstrap.js" />
+    <Compile Include="Demo.SocketIoClient\Demo.SocketIoClient\Scripts\bootstrap.min.js" />
+    <Compile Include="Demo.SocketIoClient\Demo.SocketIoClient\Scripts\jquery-1.10.2.intellisense.js" />
+    <Compile Include="Demo.SocketIoClient\Demo.SocketIoClient\Scripts\jquery-1.10.2.js" />
+    <Compile Include="Demo.SocketIoClient\Demo.SocketIoClient\Scripts\jquery-1.10.2.min.js" />
+    <Compile Include="Demo.SocketIoClient\Demo.SocketIoClient\Scripts\modernizr-2.6.2.js" />
+    <Compile Include="Demo.SocketIoClient\Demo.SocketIoClient\Scripts\respond.js" />
+    <Compile Include="Demo.SocketIoClient\Demo.SocketIoClient\Scripts\respond.min.js" />
+    <Compile Include="Demo.SocketIoClient\Demo.SocketIoClient\Scripts\_references.js" />
+    <Content Include="Demo.SocketIoClient\Demo.SocketIoClient\obj\Debug\Demo.SocketIoClient.csproj.FileListAbsolute.txt" />
+    <Content Include="Demo.SocketIoClient\packages\bootstrap.3.0.0\content\Content\bootstrap.css" />
+    <Content Include="Demo.SocketIoClient\packages\bootstrap.3.0.0\content\Content\bootstrap.min.css" />
+    <Content Include="Demo.SocketIoClient\packages\bootstrap.3.0.0\content\fonts\glyphicons-halflings-regular.svg" />
+    <Compile Include="Demo.SocketIoClient\packages\bootstrap.3.0.0\content\Scripts\bootstrap.js" />
+    <Compile Include="Demo.SocketIoClient\packages\bootstrap.3.0.0\content\Scripts\bootstrap.min.js" />
+    <Compile Include="Demo.SocketIoClient\packages\jQuery.1.10.2\Tools\jquery-1.10.2.intellisense.js" />
+    <Compile Include="Demo.SocketIoClient\packages\jQuery.1.10.2\Content\Scripts\jquery-1.10.2-vsdoc.js" />
+    <Compile Include="Demo.SocketIoClient\packages\jQuery.1.10.2\Content\Scripts\jquery-1.10.2.js" />
+    <Compile Include="Demo.SocketIoClient\packages\jQuery.1.10.2\Content\Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Demo.SocketIoClient\packages\Microsoft.AspNet.Mvc.5.0.0\lib\net45\System.Web.Mvc.xml" />
+    <Content Include="Demo.SocketIoClient\packages\Microsoft.AspNet.Razor.3.0.0\lib\net45\System.Web.Razor.xml" />
+    <Content Include="Demo.SocketIoClient\packages\Microsoft.AspNet.Web.Optimization.1.1.1\lib\net40\system.web.optimization.xml" />
+    <Content Include="Demo.SocketIoClient\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.Helpers.xml" />
+    <Content Include="Demo.SocketIoClient\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Deployment.xml" />
+    <Content Include="Demo.SocketIoClient\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Razor.xml" />
+    <Content Include="Demo.SocketIoClient\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.xml" />
+    <Compile Include="Demo.SocketIoClient\packages\Modernizr.2.6.2\Content\Scripts\modernizr-2.6.2.js" />
+    <Content Include="Demo.SocketIoClient\packages\Newtonsoft.Json.5.0.6\lib\net20\Newtonsoft.Json.xml" />
+    <Content Include="Demo.SocketIoClient\packages\Newtonsoft.Json.5.0.6\lib\net35\Newtonsoft.Json.xml" />
+    <Content Include="Demo.SocketIoClient\packages\Newtonsoft.Json.5.0.6\lib\net40\Newtonsoft.Json.xml" />
+    <Content Include="Demo.SocketIoClient\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.xml" />
+    <Content Include="Demo.SocketIoClient\packages\Newtonsoft.Json.5.0.6\lib\netcore45\Newtonsoft.Json.xml" />
+    <Content Include="Demo.SocketIoClient\packages\Newtonsoft.Json.5.0.6\lib\portable-net40%2Bsl4%2Bwp7%2Bwin8\Newtonsoft.Json.xml" />
+    <Content Include="Demo.SocketIoClient\packages\Newtonsoft.Json.5.0.6\lib\portable-net40+sl4+wp7+win8\Newtonsoft.Json.xml" />
+    <Content Include="Demo.SocketIoClient\packages\Newtonsoft.Json.5.0.6\lib\portable-net45%2Bwp80%2Bwin8\Newtonsoft.Json.xml" />
+    <Content Include="Demo.SocketIoClient\packages\Newtonsoft.Json.5.0.6\lib\portable-net45+wp80+win8\Newtonsoft.Json.xml" />
+    <Compile Include="Demo.SocketIoClient\packages\Respond.1.2.0\content\Scripts\respond.js" />
+    <Compile Include="Demo.SocketIoClient\packages\Respond.1.2.0\content\Scripts\respond.min.js" />
+    <Content Include="package.json" />
+    <Content Include="views\admin.html" />
+    <Content Include="views\css\style-overrides.css" />
+    <Content Include="views\index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Demo.SocketIoClient\" />
+    <Folder Include="Demo.SocketIoClient\Demo.SocketIoClient" />
+    <Folder Include="Demo.SocketIoClient\Demo.SocketIoClient\bin" />
+    <Folder Include="Demo.SocketIoClient\Demo.SocketIoClient\Content" />
+    <Folder Include="Demo.SocketIoClient\Demo.SocketIoClient\fonts" />
+    <Folder Include="Demo.SocketIoClient\Demo.SocketIoClient\obj\" />
+    <Folder Include="Demo.SocketIoClient\Demo.SocketIoClient\obj\Debug" />
+    <Folder Include="Demo.SocketIoClient\Demo.SocketIoClient\Scripts" />
+    <Folder Include="Demo.SocketIoClient\packages\" />
+    <Folder Include="Demo.SocketIoClient\packages\bootstrap.3.0.0\" />
+    <Folder Include="Demo.SocketIoClient\packages\bootstrap.3.0.0\content\" />
+    <Folder Include="Demo.SocketIoClient\packages\bootstrap.3.0.0\content\Content" />
+    <Folder Include="Demo.SocketIoClient\packages\bootstrap.3.0.0\content\fonts" />
+    <Folder Include="Demo.SocketIoClient\packages\bootstrap.3.0.0\content\Scripts" />
+    <Folder Include="Demo.SocketIoClient\packages\jQuery.1.10.2\" />
+    <Folder Include="Demo.SocketIoClient\packages\jQuery.1.10.2\Content\" />
+    <Folder Include="Demo.SocketIoClient\packages\jQuery.1.10.2\Content\Scripts" />
+    <Folder Include="Demo.SocketIoClient\packages\jQuery.1.10.2\Tools" />
+    <Folder Include="Demo.SocketIoClient\packages\Microsoft.AspNet.Mvc.5.0.0\" />
+    <Folder Include="Demo.SocketIoClient\packages\Microsoft.AspNet.Mvc.5.0.0\lib\" />
+    <Folder Include="Demo.SocketIoClient\packages\Microsoft.AspNet.Mvc.5.0.0\lib\net45" />
+    <Folder Include="Demo.SocketIoClient\packages\Microsoft.AspNet.Razor.3.0.0\" />
+    <Folder Include="Demo.SocketIoClient\packages\Microsoft.AspNet.Razor.3.0.0\lib\" />
+    <Folder Include="Demo.SocketIoClient\packages\Microsoft.AspNet.Razor.3.0.0\lib\net45" />
+    <Folder Include="Demo.SocketIoClient\packages\Microsoft.AspNet.Web.Optimization.1.1.1\" />
+    <Folder Include="Demo.SocketIoClient\packages\Microsoft.AspNet.Web.Optimization.1.1.1\lib\" />
+    <Folder Include="Demo.SocketIoClient\packages\Microsoft.AspNet.Web.Optimization.1.1.1\lib\net40" />
+    <Folder Include="Demo.SocketIoClient\packages\Microsoft.AspNet.WebPages.3.0.0\" />
+    <Folder Include="Demo.SocketIoClient\packages\Microsoft.AspNet.WebPages.3.0.0\lib\" />
+    <Folder Include="Demo.SocketIoClient\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45" />
+    <Folder Include="Demo.SocketIoClient\packages\Modernizr.2.6.2\" />
+    <Folder Include="Demo.SocketIoClient\packages\Modernizr.2.6.2\Content\" />
+    <Folder Include="Demo.SocketIoClient\packages\Modernizr.2.6.2\Content\Scripts" />
+    <Folder Include="Demo.SocketIoClient\packages\Newtonsoft.Json.5.0.6\" />
+    <Folder Include="Demo.SocketIoClient\packages\Newtonsoft.Json.5.0.6\lib\" />
+    <Folder Include="Demo.SocketIoClient\packages\Newtonsoft.Json.5.0.6\lib\net20" />
+    <Folder Include="Demo.SocketIoClient\packages\Newtonsoft.Json.5.0.6\lib\net35" />
+    <Folder Include="Demo.SocketIoClient\packages\Newtonsoft.Json.5.0.6\lib\net40" />
+    <Folder Include="Demo.SocketIoClient\packages\Newtonsoft.Json.5.0.6\lib\net45" />
+    <Folder Include="Demo.SocketIoClient\packages\Newtonsoft.Json.5.0.6\lib\netcore45" />
+    <Folder Include="Demo.SocketIoClient\packages\Newtonsoft.Json.5.0.6\lib\portable-net40%2Bsl4%2Bwp7%2Bwin8" />
+    <Folder Include="Demo.SocketIoClient\packages\Newtonsoft.Json.5.0.6\lib\portable-net40+sl4+wp7+win8" />
+    <Folder Include="Demo.SocketIoClient\packages\Newtonsoft.Json.5.0.6\lib\portable-net45%2Bwp80%2Bwin8" />
+    <Folder Include="Demo.SocketIoClient\packages\Newtonsoft.Json.5.0.6\lib\portable-net45+wp80+win8" />
+    <Folder Include="Demo.SocketIoClient\packages\Respond.1.2.0\" />
+    <Folder Include="Demo.SocketIoClient\packages\Respond.1.2.0\content\" />
+    <Folder Include="Demo.SocketIoClient\packages\Respond.1.2.0\content\Scripts" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+    <Folder Include="views\" />
+    <Folder Include="views\css\" />
+    <Folder Include="views\js\" />
+    <Folder Include="views\vm\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

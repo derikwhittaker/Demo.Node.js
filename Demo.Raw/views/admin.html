@@ -1,0 +1,76 @@
+﻿<html>
+<head>
+    <title>Node Index Page</title>
+    <link rel="stylesheet" href="/bootstrap/less/bootstrap.css" />
+    <link rel="stylesheet" href="/css/style-overrides.css" />
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Realtime w/ Node.js</a>
+            </div>
+            <div class="collapse navbar-collapse">
+        
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="starter-template">
+            <h1>Node QuizR -- Admin</h1>
+        </div>
+        <div id="root" class="row">
+            <div class="col-md-3">
+                <h2>Ask New Question</h2>
+                <p><a data-bind="click: sendNextQuestion" class="btn btn-default">Ask »</a></p>
+            </div>
+            <div class="col-md-5">
+                <h2>Current Question</h2>
+                <div data-bind="with: question">
+                    <h4>Question: <!--ko text: question--><!--/ko--></h4>
+                    <h4>Answers:</h4>
+                    <ol data-bind="foreach: answers">
+                        <li data-bind="text: text"></li>
+                    </ol>  
+                    <h4>Results: </h4>
+                    <p>Correct: <!--ko text:correctCount-->0<!--/ko--></p>
+                    <p>Incorrect: <!--ko text:incorrectCount-->0<!--/ko--></p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <h2>Current Users</h2>
+                <div data-bind="foreach: users">
+                    <div data-bind="text: userName"></div>
+                </div>
+            </div>
+            </div>
+
+    </div><!-- /.container -->
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/jquery/jquery.js"></script>
+    <script src="/underscore/underscore.js"></script>
+    <script src="/momentjs/min/moment.min.js"></script>
+    <script src="/js/knockout-3.0.0.js"></script>
+    <script src="/vm/adminViewModel.js"></script>
+    <script src="/bootstrap/js/bootstrap.js"></script>
+
+    <script>
+        (function () {
+            var vm = new admin.adminViewModel();
+            var rootDom = $('#root')[0];
+
+            ko.applyBindings(vm, rootDom);
+        })();
+    </script>
+</body>
+</html>

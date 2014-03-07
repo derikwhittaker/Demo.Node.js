@@ -1,0 +1,17 @@
+{
+    "name": "Demo.DebugLogger",
+    "version": "0.0.0",
+    "description": "Demo.DebugLogger",
+    "main": "app.js",
+    "author": {
+        "name": "Derik",
+        "email": ""
+    },
+    "dependencies": {
+        "express": "3.4.8",
+        "path" : "0.4.9",
+        "socket.io" : "0.9.16",
+        "less-middleware": "*",
+        "ejs" : "*"
+    }
+}
